@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar">
+  	<header>CSS explained</header>
+  	<a href="#Introduction" class="nav-link">Introduction</a>
+  	<a href="#CSS_syntax" class="nav-link">CSS syntax</a>
+  	<a href="#Selector" class="nav-link">Selector</a>
+  	<a href="#Declaration_block" class="nav-link">Declaration block</a>
+  	<a href="#Comments_in_CSS" class="nav-link">Comments in CSS</a>
+  	<a href="#Adding_CSS_to_a_website" class="nav-link">Adding CSS to a website</a>
+  	<a href="#Next_steps" class="nav-link">Next steps</a>
+  	<a href="#Reference" class="nav-link">Reference</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+    	<header>Introduction</header>
+    		  <p>CSS (Cascading Style Sheets) is a language that gives styles to a website. You should have basic knowledge of HTML to learn CSS. Every element, class or id can be taken from an HTML document and styled as a selector in CSS (a selector doesn’t have angle brackets unlike an html element). To style an element, say what property you want to style and how it should look like – give it a value. The property can be a color (color means a font color), background-color, width, height or even html or body. The value can be blue, white, 10px, 20px, etc. Some code editors (e.g. Brackets) will suggest the value names after you start typing it.</p>
+
+    	
+    </section>
+    <section class="main-section" id="CSS_syntax">
+    	<header>CSS syntax</header>
+    		  <p>CSS document is built of CSS rules. The structure of a CSS rule looks like this:
+        	  <code>p {<br>  color: red;<br>  font-size: 16px;<br>}
+        	  </code>
+			  </p>
+    </section>
+    <section class="main-section" id="Selector">
+    	<header>Selector</header>
+    		  <p>When you look at the CSS rule above, there is a selector (e.g. p) and a declaration block (the curly braces and everything inside it). If you take any element from your HTML document and get rid of angle brackets, then you have a selector (this kind of selectors is called Type Selector). There are a few ways of selecting HTML elements in order to style them with CSS. See CSS selectors at MDN Web Docs. By learning basic selectors you will be able to style almost everything.</p>
+    		  <p>You can style more than one element in the same way by separating selectors with a comma. It would look like this:
+    		  <code>input, textarea, button, select, label {<br>  font-size: 14px;<br>}
+    		  </code>
+			</p>
+    </section>
+    <section class="main-section" id="Declaration_block">
+    	<header>Declaration block</header>
+   		      <code>{color: red;<br>font-size: 16px;<br>}<br><br>/* you see above a declaration block */<br>/* make sure to place a selector before a declaration block */
+			  </code>
+    		  <p>Besides a selector there is also a declaration block – the curly braces and everything inside it. Each line inside a declaration block is called a declaration. Declaration is a property – value pair. Each property – value pair is separated by a colon. Each declaration is ended with a semicolon. CSS declaration looks like this:</p>
+    		  <code>color: red;<br><br>/* you see above a declaration, with a property of color and a value of red */<br>/* declarations wrapped in curly braces create a declaration block */
+    		  </code>
+    		  <p>How do you know, what property to type in? There’s a list of most common CSS properties at MDN Web Docks.</p>
+    </section>
+    <section class="main-section" id="Comments_in_CSS">
+    	<header>Comments in CSS</header>
+    		  <p>The only official way of writing comments in CSS is by wrapping one or more lines of text or code in /* and */.</p>
+    		  <code>/* single line comment */<br><br>/* multiple lines<br>comment */
+    		  </code>
+  
+    	
+    </section>
+        <section class="main-section" id="Adding_CSS_to_a_website">
+    	<header>Adding CSS to a website</header>
+			<p>There are three ways of adding CSS to a website. Here is the most efficient and most used method, called external CSS. Basically you have a CSS document with .css file extension, e.g. style.css. It may be placed in the same directory as your index.html file. Now link your HTML document to your CSS styles. Place this link before the <strong>head</strong> closing tag of your HTML document. The path to your stylesheet may be different. It depends on directories where the CSS and HTML documents are placed. A link to your CSS document should look like this:</p>
+    		  <code>&lt;link rel=”stylesheet” href=”style.css”&gt;
+    		  </code>
+			
+   
+  
+    </section>
+        <section class="main-section" id="Next_steps">
+    	<header>Next steps</header>
+    		  <p>What else should you know?</p>
+    		  <ul>
+    		  	<li>Inheritance in CSS</li>
+    		  	<li>The cascade</li>
+    		  	<li>Styling text</li>
+    		  	<li>Styling boxes</li>
+    		  	<li>CSS Layout</li>
+    		  </ul>
+
+    	
+    </section>
+        <section class="main-section" id="Reference">
+    	<header>Reference</header>
+    		  <p>Written by Monika Woźnowska. Available online at <a href="https://web-developer-learning-guide.com/">Web Developer - Learning Guide</a></p>
+    		  <p>Reference: <a href="https://developer.mozilla.org" target="_blank">MDN</a>, <a href="https://www.w3.org/" target="_blank">W3C</a></p>
+
+    	
+    </section>
+  </main>
+	
+</body>
+</html>
